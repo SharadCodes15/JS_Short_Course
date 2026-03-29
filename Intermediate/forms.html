@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: gray;
+            color:Green;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            margin: 10px;
+        }
+        form > *{
+            padding: 20px;
+            margin: 5px;
+            min-width: 100px;
+        }
+        #hide{
+            color: white;
+            display: none;
+            font-size: 20px;
+
+        }
+
+    </style>
+    <form action="">
+        <!-- Inline Validation but can be bypass inspect element -->
+        <input type="text"  required minlength="5" maxlength="20"  name="name" id="name" placeholder="Name">
+        <div id="hide">
+            <small>The name length should be greater than 5 letter</small>
+        </div>
+        <input type="email" autocomplete="off" name="email" id="email" placeholder="Email">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <textarea name="textarea" id="textarea" placeholder="Tell us about you..."></textarea>
+        <input type="submit" placeholder="Submit">
+    </form>
+
+
+
+    <script src="formH.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclic Card Shuffle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Card Manager</h1>
+        
+        <div class="controls">
+            <button onclick="moveUp()" class="btn move-btn">↑ Move All Up</button>
+            <button onclick="moveDown()" class="btn move-btn">↓ Move All Down</button>
+            <button onclick="addCard()" class="btn add-btn">+ Add Card</button>
+        </div>
+
+        <div id="cardDisplay" class="card-grid">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
