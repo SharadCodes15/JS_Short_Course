@@ -17,7 +17,7 @@ after completion of function it get erased
 
 // syncronous(line by line) and asyncronous(completion order all at a time) 
 
-
+ 
 setTimeout(() => {
     console.log("hey 1000 1st")
 }, 1000);
